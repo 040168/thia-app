@@ -357,9 +357,9 @@ function App() {
             });
 
             const payload = { contents: [{ role: "user", parts: parts }] };
-            // IMPORTANT: Replace "" with your actual Gemini API Key.
+            // IMPORTANT: Replace "YOUR_GEMINI_API_KEY_HERE" with your actual Gemini API Key.
             // You can get one from Google AI Studio: https://aistudio.google.com/app/apikey
-            const apiKey = "AIzaSyBSa-CMW27Pf0HJVIWeunVn-KSMP61SI6c"; 
+            const apiKey = "AIzaSyDH55FOGvxEkit7_20aGcYrZFu6ihhMHFo"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             console.log("Sending request to LLM API:", { payload, apiUrl }); // Log the request payload
